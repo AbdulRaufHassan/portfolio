@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porfolio</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -22,7 +19,8 @@
   </head>
   <body>
     <header
-      class="navbar navbar-expand-lg w-100 py-3 d-flex align-items-center justify-content-between bg-white position-absolute top-0 start-0 animate__animated animate__slideInDown"
+      class="navbar navbar-expand-lg w-100 py-3 d-flex align-items-center justify-content-between bg-white position-fixed top-0 start-0"
+      data-aos="fade-down"
     >
       <a
         href="#"
@@ -46,10 +44,14 @@
           class="navbar-nav d-flex align-items-center list-unstyled m-0 nav_links"
         >
           <li class="nav-item">
-            <a href="#" class="text-decoration-none fw-medium">About</a>
+            <a href="#about_sec" class="text-decoration-none fw-medium"
+              >About</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="text-decoration-none fw-medium">Skills</a>
+            <a href="#skill_sec" class="text-decoration-none fw-medium"
+              >Skills</a
+            >
           </li>
           <li class="nav-item">
             <a href="#" class="text-decoration-none fw-medium">Projects</a>
@@ -60,12 +62,10 @@
         </ul>
       </nav>
     </header>
-    <div
+    <section
       class="home_section d-flex w-100 bg-warning align-items-center justify-content-between"
     >
-      <div
-        class="d-flex flex-column greeting_section animate__animated animate__slideInLeft"
-      >
+      <div class="d-flex flex-column greeting_section" data-aos="fade-right">
         <p class="m-0 quickSand_font">Hi, I'm Rauf Hassan,</p>
         <p class="m-0 quickSand_font d-flex align-items-center">
           A
@@ -122,16 +122,164 @@
         </button>
       </div>
       <div
-        class="home_img flex justify-content-center align-items-center animate__animated animate__slideInRight"
+        class="home_img flex justify-content-center align-items-center"
+        data-aos="fade-left"
       >
         <img src="./assets/images/homeSec_img.png" width="100%" />
       </div>
-    </div>
-
+    </section>
+    <section
+      class="about_section_main d-flex w-100 flex-column align-items-center justify-content-center"
+      id="about_sec"
+      data-aos="zoom-in"
+    >
+      <h1 class="josefinSans_font mb-3">About Me</h1>
+      <div
+        class="d-flex justify-content-between align-items-center w-100 about_section"
+      >
+        <div
+          class="flex-grow-1 d-flex align-items-center justify-content-center aboutSec_imgDiv"
+        >
+          <img src="./assets/images/aboutSection_img2.webp" />
+        </div>
+        <div class="d-flex flex-column justify-content-center about_textSec">
+          <p class="quickSand_font fw-semibold fs-5" style="color: #594c21">
+            Hello! I'm Rauf Hassan, a passionate frontend developer. While I may
+            not have professional experience yet, I am deeply committed to
+            honing my skills and embracing new challenges. My goal is to
+            contribute to creating innovative and user-friendly web experiences.
+            I am constantly exploring new technologies and best practices, and I
+            am always eager to enhance my coding abilities. If you appreciate my
+            passion and dedication, feel free to reach out, and let's
+            collaborate on an exciting project together.
+          </p>
+          <button class="cv_btn bg-black text-white josefinSans_font mt-3">
+            Download CV
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="skills_section d-flex w-100 flex-column align-items-center justify-content-center"
+      id="skill_sec"
+      data-aos="flip-up"
+    >
+      <h1 class="josefinSans_font">Skills</h1>
+      <ul class="w-100 mx-0 mb-0 p-0 list-unstyled d-flex flex-wrap">
+        <li class="flex flex-column me-2">
+          <div
+            class="html_progressBar d-flex align-items-center justify-content-between skill_name_per"
+          >
+            <h6>HTML5</h6>
+            <h6>95%</h6>
+          </div>
+          <div class="meter">
+            <span class="progress html_progressBar"></span>
+          </div>
+        </li>
+        <li class="flex flex-column ms-2">
+          <div
+            class="css_progressBar d-flex align-items-center justify-content-between skill_name_per"
+          >
+            <h6>CSS3</h6>
+            <h6>90%</h6>
+          </div>
+          <div class="meter">
+            <span class="progress css_progressBar"></span>
+          </div>
+        </li>
+        <li class="flex flex-column me-2">
+          <div
+            class="tailwind_progressBar d-flex align-items-center justify-content-between skill_name_per"
+          >
+            <h6>TAILWIND CSS</h6>
+            <h6>80%</h6>
+          </div>
+          <div class="meter">
+            <span class="progress tailwind_progressBar"></span>
+          </div>
+        </li>
+        <li class="flex flex-column ms-2">
+          <div
+            class="js_progressBar d-flex align-items-center justify-content-between skill_name_per"
+          >
+            <h6>JAVASCRIPT</h6>
+            <h6>70%</h6>
+          </div>
+          <div class="meter">
+            <span class="progress js_progressBar"></span>
+          </div>
+        </li>
+        <li class="flex flex-column me-2">
+          <div
+            class="react_progressBar d-flex align-items-center justify-content-between skill_name_per"
+          >
+            <h6>REACT JS</h6>
+            <h6>75%</h6>
+          </div>
+          <div class="meter">
+            <span class="progress react_progressBar"></span>
+          </div>
+        </li>
+        <li class="flex flex-column ms-2">
+          <div
+            class="firebase_progressBar d-flex align-items-center justify-content-between skill_name_per"
+          >
+            <h6>FIREBASE</h6>
+            <h6>80%</h6>
+          </div>
+          <div class="meter">
+            <span class="progress firebase_progressBar"></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section
+      class="education_section d-flex w-100 flex-column align-items-center justify-content-center"
+      data-aos="fade-left"
+    >
+      <h1 class="josefinSans_font">Education</h1>
+      <ul class="w-100 mx-0 mb-0 p-0 list-unstyled d-flex">
+        <li class="d-flex justify-content-center align-items-center w-50">
+          <div class="d-flex flex-column align-items-center">
+            <h1
+              class="m-0 fs-3 w-100 quickSand_font text-black fw-semibold text-capitalize"
+            >
+              Saylani Mass IT Training Program
+            </h1>
+            <h6
+              class="m-0 w-100 josefinSans_font my-3 text-body-secondary fs-4 text-capitalize"
+            >
+              Mern Stack Development
+            </h6>
+            <p class="w-100 m-0">2023 - 2024</p>
+          </div>
+        </li>
+        <li class="d-flex flex-column w-50 align-items-center">
+          <div class="d-flex flex-column align-items-center">
+            <h1
+              class="m-0 fs-3 w-100 quickSand_font text-black fw-semibold text-capitalize"
+            >
+              Govt Degree Boys Collage Asifabad
+            </h1>
+            <h6
+              class="m-0 w-100 josefinSans_font my-3 text-body-secondary fs-4 text-capitalize"
+            >
+              Intermediate
+            </h6>
+            <p class="w-100 m-0">2021 - 2024</p>
+          </div>
+        </li>
+      </ul>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
