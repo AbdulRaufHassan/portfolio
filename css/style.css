@@ -12,7 +12,7 @@ body {
   overflow-x: hidden !important;
   max-width: 1700px;
   min-width: 350px;
-  margin: 0px auto;
+  margin: 0px auto !important;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -36,7 +36,8 @@ header {
 
 .about_section_main,
 .skills_section,
-.education_section {
+.education_section,
+.projects_section {
   padding: 0px 5%;
 }
 
@@ -147,7 +148,8 @@ header .navbar-collapse {
 
 .about_section_main > h1,
 .skills_section > h1,
-.education_section > h1 {
+.education_section > h1,
+.projects_section > h1 {
   margin-top: 6rem;
   border-bottom: 4px solid #ffc107 !important;
   font-size: 50px;
@@ -180,7 +182,8 @@ header .navbar-collapse {
 }
 
 .skills_section ul,
-.education_section ul {
+.education_section ul,
+.projects_section ul {
   margin-top: 60px;
 }
 
@@ -223,12 +226,108 @@ header .navbar-collapse {
   color: black !important;
 }
 
+.education_section .education_logo > div {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  overflow: hidden !important;
+  margin-bottom: 20px;
+}
+
+.education_section .education_logo > div > img {
+  height: 90%;
+  width: 90%;
+  background-size: cover;
+}
+
+.projects_section ul > li {
+  min-height: 500px;
+  max-height: fit-content;
+  min-width: 410px;
+  max-width: 410px;
+  background-color: gainsboro;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 30px;
+  overflow: hidden !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+}
+
+.projects_section ul > li .projectUI_img_parentEl {
+  min-height: 265px;
+  max-height: 265px;
+  box-shadow: 0 1px 8px #807c80;
+}
+
+.projects_section ul > li .projectUI_img_parentEl > img {
+  object-fit: fill;
+}
+
+.projects_section ul > li .projectDetail_parentDiv {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projects_section ul > li .projectDetail_parentDiv > .repo_live_links {
+  flex: 1;
+  align-items: end !important;
+}
+
+.projects_section ul > li .projectDetail_parentDiv h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+.projects_section ul > li .projectDetail_parentDiv p {
+  color: rgb(105, 105, 105);
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.projects_section ul > li .repo_live_links > a {
+  background-color: #594c21;
+  color: white;
+  width: 50%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "quickSand_font", sans-serif !important;
+  height: 55px;
+  font-weight: 500;
+}
+
+.projects_section ul > li .repo_live_links > a:nth-of-type(1) {
+  border-right: 1px solid gainsboro;
+}
+
+.projects_section ul > li .repo_live_links > a:nth-of-type(2) {
+  border-left: 1px solid gainsboro;
+}
+
+.projects_section ul > li .repo_live_links > a:hover {
+  color: #594c21;
+  background-color: ghostwhite;
+}
+
+.projects_section ul > li .repo_live_links > a:hover i {
+  color: #594c21 !important;
+}
+
 @media only screen and (max-width: 1387px) {
   header,
   .home_section,
   .skills_section,
   .about_section_main,
-  .education_section {
+  .education_section,
+  .projects_section {
     padding-left: 2% !important;
     padding-right: 2% !important;
   }
@@ -272,7 +371,8 @@ header .navbar-collapse {
 
   .about_section_main > h1,
   .skills_section > h1,
-  .education_section > h1 {
+  .education_section > h1,
+  .projects_section > h1 {
     margin-top: 5rem;
     margin-bottom: 0px !important;
     font-size: 50px;
@@ -313,16 +413,41 @@ header .navbar-collapse {
   .about_section_main .about_textSec {
     width: 95%;
   }
-  .skills_section ul,
-  .education_section ul {
+  .skills_section ul {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .skills_section ul > li {
+  .skills_section ul > li,
+  .education_section ul > li {
     width: 100%;
     margin-bottom: 40px;
     margin-right: 0px !important;
     margin-left: 0px !important;
+  }
+  .education_section ul {
+    align-items: center;
+    justify-content: space-between !important;
+  }
+
+  .education_section ul > li:nth-of-type(1) {
+    justify-content: unset !important;
+  }
+
+  .education_section ul > li {
+    width: 45% !important;
+  }
+
+  .education_section ul > li h1 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .education_section ul > li h6 {
+    font-size: 19px !important;
+  }
+
+  .education_section ul > li p {
+    font-size: 17px !important;
   }
 }
 
@@ -370,7 +495,8 @@ header .navbar-collapse {
 
   .about_section_main > h1,
   .skills_section > h1,
-  .education_section > h1 {
+  .education_section > h1,
+  .projects_section > h1 {
     margin-top: 4rem;
     font-size: 40px;
   }
@@ -379,8 +505,63 @@ header .navbar-collapse {
     font-size: 15px;
   }
 
-  .skills_section ul,
   .education_section ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .skills_section ul,
+  .education_section ul,
+  .projects_section ul {
     margin-top: 45px;
+  }
+  .education_section ul > li {
+    width: 100% !important;
+    align-items: start !important;
+  }
+
+  .education_section ul > li h1 {
+    font-size: 18px !important;
+  }
+
+  .education_section ul > li h6 {
+    font-size: 17px !important;
+  }
+
+  .education_section ul > li p {
+    font-size: 15px !important;
+  }
+
+  .projects_section ul > li {
+    min-height: 450px;
+    max-height: fit-content;
+    min-width: 330px;
+    max-width: 330px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .projects_section ul > li .projectUI_img_parentEl {
+    min-height: 240px;
+    max-height: 240px;
+  }
+
+  .projects_section ul > li .projectDetail_parentDiv h1 {
+    font-size: 30px;
+  }
+
+  .projects_section ul > li .projectDetail_parentDiv p {
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .projects_section ul > li .repo_live_links > a {
+    font-size: 12px;
+  }
+
+  .projects_section ul > li .repo_live_links > a i {
+    font-size: 20px !important;
+    margin-right: 10px !important;
   }
 }

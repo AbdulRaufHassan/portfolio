@@ -54,7 +54,9 @@
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="text-decoration-none fw-medium">Projects</a>
+            <a href="#project_sec" class="text-decoration-none fw-medium"
+              >Projects</a
+            >
           </li>
           <li class="nav-item">
             <a href="#" class="text-decoration-none fw-medium">Contact</a>
@@ -140,18 +142,18 @@
         <div
           class="flex-grow-1 d-flex align-items-center justify-content-center aboutSec_imgDiv"
         >
-          <img src="./assets/images/aboutSection_img2.webp" />
+          <img src="./assets/images/aboutSection_img.webp" />
         </div>
         <div class="d-flex flex-column justify-content-center about_textSec">
           <p class="quickSand_font fw-semibold fs-5" style="color: #594c21">
-            Hello! I'm Rauf Hassan, a passionate frontend developer. While I may
-            not have professional experience yet, I am deeply committed to
-            honing my skills and embracing new challenges. My goal is to
-            contribute to creating innovative and user-friendly web experiences.
-            I am constantly exploring new technologies and best practices, and I
-            am always eager to enhance my coding abilities. If you appreciate my
-            passion and dedication, feel free to reach out, and let's
-            collaborate on an exciting project together.
+            I am a frontend developer who is now diving into backend
+            development. I have a strong grasp of frontend technologies and am
+            currently exploring backend technologies. My goal is to become a
+            Mern stack developer capable of building robust and scalable web
+            applications. I have a curiosity to learn new things and the courage
+            to face any challenges that come my way. I understand that the
+            learning process is a journey, and I am fully committed to
+            completing this journey with enthusiasm and dedication.
           </p>
           <button class="cv_btn bg-black text-white josefinSans_font mt-3">
             Download CV
@@ -236,12 +238,17 @@
     </section>
     <section
       class="education_section d-flex w-100 flex-column align-items-center justify-content-center"
-      data-aos="fade-left"
+      data-aos="fade-up-left"
     >
       <h1 class="josefinSans_font">Education</h1>
       <ul class="w-100 mx-0 mb-0 p-0 list-unstyled d-flex">
         <li class="d-flex justify-content-center align-items-center w-50">
           <div class="d-flex flex-column align-items-center">
+            <div class="w-100 education_logo">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./assets/images/smit_logo.png" />
+              </div>
+            </div>
             <h1
               class="m-0 fs-3 w-100 quickSand_font text-black fw-semibold text-capitalize"
             >
@@ -252,22 +259,220 @@
             >
               Mern Stack Development
             </h6>
-            <p class="w-100 m-0">2023 - 2024</p>
+            <p class="w-100 m-0 josefinSans_font fs-5" style="color: #594c21">
+              2023 - Present
+            </p>
           </div>
         </li>
         <li class="d-flex flex-column w-50 align-items-center">
           <div class="d-flex flex-column align-items-center">
+            <div class="w-100 education_logo">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./assets/images/collage_logo.jpg" />
+              </div>
+            </div>
             <h1
               class="m-0 fs-3 w-100 quickSand_font text-black fw-semibold text-capitalize"
             >
-              Govt Degree Boys Collage Asifabad
+              Govt Degree Collage Asifabad
             </h1>
             <h6
               class="m-0 w-100 josefinSans_font my-3 text-body-secondary fs-4 text-capitalize"
             >
               Intermediate
             </h6>
-            <p class="w-100 m-0">2021 - 2024</p>
+            <p class="w-100 m-0 josefinSans_font fs-5" style="color: #594c21">
+              2021 - Present
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section
+      class="projects_section d-flex w-100 flex-column align-items-center justify-content-center"
+      id="project_sec"
+      data-aos="fade-up-right"
+    >
+      <h1 class="josefinSans_font">Projects</h1>
+      <ul
+        class="w-100 mx-0 mb-0 p-0 list-unstyled d-flex flex-wrap justify-content-center"
+      >
+        <li class="d-flex flex-column">
+          <div class="w-100 projectUI_img_parentEl">
+            <img src="./assets/images/chatApp_UI_img.png" class="w-100 h-100" />
+          </div>
+          <div class="projectDetail_parentDiv">
+            <h1 class="text-capitalize quickSand_font m-3">Chat App</h1>
+            <p class="josefinSans_font mx-3">
+              Developed a React Js and Firebase - based chat application with
+              real-time messaging, contact management, group creation, member
+              management, and user profile functionality
+            </p>
+            <div class="d-flex align-items-center h-auto w-100 repo_live_links">
+              <a
+                href="https://github.com/AbdulRaufHassan/Chat_App-Firebase-React_Js.git"
+                target="_blank"
+                ><i class="fa-brands fa-github fs-2 text-white me-3"></i> Github
+                Repositry</a
+              >
+              <a href="https://chatapp-reactjs.surge.sh/" target="_blank"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square fs-4 text-white me-3"
+                ></i>
+                Live Link</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="d-flex flex-column">
+          <div class="w-100 projectUI_img_parentEl">
+            <img
+              src="./assets/images/ecommerce_UI_img.png"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="projectDetail_parentDiv">
+            <h1 class="text-capitalize quickSand_font m-3">E-Commerce</h1>
+            <p class="josefinSans_font mx-3">
+              Developed a e-commerce platform using React Js and Firebase.
+              Includes an admin dashboard for managing categories, products,
+              orders, and users. On the user side, features like favoriting
+              items, adding to cart, and order submission are available
+            </p>
+            <div class="d-flex align-items-center h-auto w-100 repo_live_links">
+              <a
+                href="https://github.com/AbdulRaufHassan/E-commerce__Firebase__Reactjs.git"
+                target="_blank"
+                ><i class="fa-brands fa-github fs-2 text-white me-3"></i> Github
+                Repositry</a
+              >
+              <a
+                href="https://ecommerce-reactjs-firebase.surge.sh/"
+                target="_blank"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square fs-4 text-white me-3"
+                ></i>
+                Live Link</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="d-flex flex-column">
+          <div class="w-100 projectUI_img_parentEl">
+            <img
+              src="./assets/images/bloggingApp_UI_img.png"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="projectDetail_parentDiv">
+            <h1 class="text-capitalize quickSand_font m-3">Blogging App</h1>
+            <p class="josefinSans_font mx-3">
+              Developed a blogging application using HTML, CSS, JavaScript, and
+              Firebase. Users can create, edit, and delete blog posts, view all
+              blogs, and update their profiles
+            </p>
+            <div class="d-flex align-items-center h-auto w-100 repo_live_links">
+              <a
+                href="https://github.com/AbdulRaufHassan/BloggingApp_assignment-Html_Css_js-Firebase.git"
+                target="_blank"
+                ><i class="fa-brands fa-github fs-2 text-white me-3"></i> Github
+                Repositry</a
+              >
+              <a
+                href="https://blogging-app-assignment.surge.sh/"
+                target="_blank"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square fs-4 text-white me-3"
+                ></i>
+                Live Link</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="d-flex flex-column">
+          <div class="w-100 projectUI_img_parentEl">
+            <img src="./assets/images/quizApp_UI_img.png" class="w-100 h-100" />
+          </div>
+          <div class="projectDetail_parentDiv">
+            <h1 class="text-capitalize quickSand_font m-3">Quiz App</h1>
+            <p class="josefinSans_font mx-3">
+              Developed a quiz app using React JS that features questions
+              specifically related to React JS
+            </p>
+            <div class="d-flex align-items-center h-auto w-100 repo_live_links">
+              <a
+                href="https://github.com/AbdulRaufHassan/QuizApp_react_practice.git"
+                target="_blank"
+                ><i class="fa-brands fa-github fs-2 text-white me-3"></i> Github
+                Repositry</a
+              >
+              <a href="https://quizapp_react_practice.surge.sh/" target="_blank"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square fs-4 text-white me-3"
+                ></i>
+                Live Link</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="d-flex flex-column">
+          <div class="w-100 projectUI_img_parentEl">
+            <img
+              src="./assets/images/weatherApp_UI_img.png"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="projectDetail_parentDiv">
+            <h1 class="text-capitalize quickSand_font m-3">Weather App</h1>
+            <p class="josefinSans_font mx-3">
+              Developed a weather app using React JS and the OpenWeatherMap API.
+              This app allows users to search for a city or country to get the
+              current weather information and a five-day temperature forecast
+            </p>
+            <div class="d-flex align-items-center h-auto w-100 repo_live_links">
+              <a
+                href="https://github.com/AbdulRaufHassan/weatherApp-assignment-react_Js.git"
+                target="_blank"
+                ><i class="fa-brands fa-github fs-2 text-white me-3"></i> Github
+                Repositry</a
+              >
+              <a href="https://weather_app_reactjs.surge.sh/" target="_blank"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square fs-4 text-white me-3"
+                ></i>
+                Live Link</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="d-flex flex-column">
+          <div class="w-100 projectUI_img_parentEl">
+            <img
+              src="./assets/images/todoList_UI_img.png"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="projectDetail_parentDiv">
+            <h1 class="text-capitalize quickSand_font m-3">Todo List</h1>
+            <p class="josefinSans_font mx-3">
+              Developed a todo list application using HTML, CSS, and JavaScript,
+              utilizing localStorage. This app allows users to add, edit,
+              delete, and change the status of tasks
+            </p>
+            <div class="d-flex align-items-center h-auto w-100 repo_live_links">
+              <a
+                href="https://github.com/AbdulRaufHassan/todo-list_using_html-css-js.git"
+                target="_blank"
+                ><i class="fa-brands fa-github fs-2 text-white me-3"></i> Github
+                Repositry</a
+              >
+              <a href="https://todo-list-assignment.surge.sh/" target="_blank"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square fs-4 text-white me-3"
+                ></i>
+                Live Link</a
+              >
+            </div>
           </div>
         </li>
       </ul>
