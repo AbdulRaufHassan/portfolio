@@ -59,7 +59,9 @@
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="text-decoration-none fw-medium">Contact</a>
+            <a href="#contact_sec" class="text-decoration-none fw-medium"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -119,9 +121,12 @@
             ></a>
           </li>
         </ul>
-        <button class="cv_btn bg-black text-white josefinSans_font">
-          Download CV
-        </button>
+        <a
+          href="./resume.pdf"
+          class="resume_btn bg-black text-white josefinSans_font text-decoration-none"
+        >
+          View Resume
+        </a>
       </div>
       <div
         class="home_img flex justify-content-center align-items-center"
@@ -155,9 +160,12 @@
             learning process is a journey, and I am fully committed to
             completing this journey with enthusiasm and dedication.
           </p>
-          <button class="cv_btn bg-black text-white josefinSans_font mt-3">
-            Download CV
-          </button>
+          <a
+            href="./resume.pdf"
+            class="resume_btn bg-black text-white josefinSans_font mt-3 text-decoration-none"
+          >
+            View Resume
+          </a>
         </div>
       </div>
     </section>
@@ -475,8 +483,116 @@
             </div>
           </div>
         </li>
+        <li class="d-flex flex-column">
+          <div class="w-100 projectUI_img_parentEl">
+            <img
+              src="./assets/images/pomodoroTimer_UI_img.png"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="projectDetail_parentDiv">
+            <h1 class="text-capitalize quickSand_font m-3">Pomodoro Timer</h1>
+            <p class="josefinSans_font mx-3">
+              Developed a Pomodoro timer using HTML, CSS, and JavaScript. This
+              timer allows users to set custom focus and break times to enhance
+              productivity
+            </p>
+            <div class="d-flex align-items-center h-auto w-100 repo_live_links">
+              <a
+                href="https://github.com/AbdulRaufHassan/pomodoro_timer-assignment-html_css_js.git"
+                target="_blank"
+                ><i class="fa-brands fa-github fs-2 text-white me-3"></i> Github
+                Repositry</a
+              >
+              <a
+                href="https://pomodoro-timer-assignment.surge.sh/"
+                target="_blank"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square fs-4 text-white me-3"
+                ></i>
+                Live Link</a
+              >
+            </div>
+          </div>
+        </li>
       </ul>
     </section>
+    <section
+      class="contact_section d-flex w-100 flex-column align-items-center justify-content-center"
+      data-aos="fade-up"
+      id="contact_sec"
+    >
+      <h1 class="josefinSans_font">Contact Me</h1>
+      <p class="text-center quickSand_font fw-semibold">
+        DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL
+      </p>
+      <div class="w-auto d-flex align-items-center mt-5 main_contact_links">
+        <a
+          href="tel:+923122413127"
+          target="_blank"
+          class="mx-5 josefinSans_font w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none"
+          ><i class="fa-solid fa-phone fs-3 me-2"></i> +92-3122413127</a
+        >
+        <a
+          href="mailto:raufh1093@gmail.com"
+          target="_blank"
+          class="mx-5 josefinSans_font w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none"
+          ><i class="fa-solid fa-envelope fs-3 me-2"></i> raufh1093@gmail.com</a
+        >
+      </div>
+      <ul
+        class="d-flex align-items-center list-unstyled mt-5 mx-0 mb-0 social_links flex-wrap"
+      >
+        <li>
+          <a
+            href="https://www.linkedin.com/in/raufhassan/"
+            target="_blank"
+            class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none"
+            ><i class="fa-brands fa-linkedin text-white fs-2"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/AbdulRaufHassan"
+            target="_blank"
+            class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none"
+            ><i class="fa-brands fa-github text-white fs-2"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="mailto:raufh1093@gmail.com"
+            class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none"
+            ><i class="fa-solid fa-envelope text-white fs-2"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/dev_abdulraufhassan/"
+            target="_blank"
+            class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none"
+            ><i class="fa-brands fa-instagram text-white fs-2"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/rauf.hassan.3323"
+            target="_blank"
+            class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none"
+            ><i class="fa-brands fa-facebook text-white fs-2"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+    <footer
+      class="w-100 py-3 d-flex justify-content-center align-items-center bg-warning"
+    >
+      <a
+        href="https://github.com/AbdulRaufHassan/portfolio.git"
+        class="quickSand_font fs-6 text-black text-decoration-none"
+        >Ⓒ Developed and Designed by ME</a
+      >
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
